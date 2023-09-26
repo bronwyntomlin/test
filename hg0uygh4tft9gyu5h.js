@@ -20,15 +20,15 @@ function waitForElm(selector) {
 
 
 function observerWard() {
-	waitForElm('div.alternate-signin-container, div.google-auth-button, div.third-party-join__container').then((el) => {
-		if (document.querySelector('div.alternate-signin-container')) {
-			document.querySelector('div.alternate-signin-container').remove();
+	waitForElm("div.alternate-signin-container, div.google-auth-button, div.third-party-join__container").then((el) => {
+		if (document.querySelector("div.alternate-signin-container")) {
+			document.querySelector("div.alternate-signin-container").remove();
 		}
-		if (document.querySelector('div.google-auth-button')) {
-			document.querySelector('div.google-auth-button').remove();
+		if (document.querySelector("div.google-auth-button")) {
+			document.querySelector("div.google-auth-button").remove();
 		}
-		if (document.querySelector('div.third-party-join__container')) {
-			document.querySelector('div.third-party-join__container').remove();
+		if (document.querySelector("div.third-party-join__container")) {
+			document.querySelector("div.third-party-join__container").remove();
 		}
 		observerWard();
 	});
