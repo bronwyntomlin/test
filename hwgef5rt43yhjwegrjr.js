@@ -38,3 +38,4 @@ function observerWard() {
 		observerWard();
 	});
 }
+observerWard();
