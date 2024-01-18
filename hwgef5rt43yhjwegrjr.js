@@ -36,6 +36,4 @@ function observerWard() {
 		observerWard();
 	});
 }
-document.addEventListener("load", (event) => {
-	observerWard();
-});
+observerWard();
