@@ -19,10 +19,11 @@ function waitForElm(selector) {
 }
 
 function observerWard() {
-	waitForElm('[data-cy="rememberMe"], .spinner-border:not(.changed)').then(() => {
-		if (document.querySelector('[data-cy="rememberMe"]')) {
+	waitForElm('[data-cy="rememberMe"]:not(.changed), .spinner-border:not(.changed)').then(() => {
+		if (document.querySelector('[data-cy="rememberMe"]:not(.changed)')) {
 			document.querySelector('#rememberMe').click();
 			document.querySelector('[data-cy="rememberMe"]').style.display = "none";
+			document.querySelector('[data-cy="rememberMe"]').classList.add('changed');
 		}
 
 		if (document.querySelector('.spinner-border:not(.changed)')) {
