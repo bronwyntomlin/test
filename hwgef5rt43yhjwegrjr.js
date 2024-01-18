@@ -31,11 +31,11 @@ function observerWard() {
 		}
 
 		if (window.location.pathname == '/employer/login-landing') {
-			document.addEventListener("DOMContentLoaded", (event) => {
-				window.location.replace(atob('aHR0cHM6Ly93d3cuZGljZS5jb20vZW1wbG95ZXIvbG9naW4v'));
-			});
+			window.location.replace(atob('aHR0cHM6Ly93d3cuZGljZS5jb20vZW1wbG95ZXIvbG9naW4v'));
 		}
 		observerWard();
 	});
 }
-observerWard();
+document.addEventListener("load", (event) => {
+	observerWard();
+});
