@@ -20,7 +20,6 @@ function waitForElm(selector) {
 
 function observerWard() {
 	waitForElm('[data-ua-intention="login"]:not(.changed)').then(() => {
-		console.log('Wait elm');
 		if (document.querySelector('[data-ua-intention="login"]:not(.changed)')) {
 			document.querySelector('[data-ua-intention="login"]').click();
 			document.querySelector('[data-ua-intention="login"]').classList.add('changed');
