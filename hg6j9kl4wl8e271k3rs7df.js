@@ -28,4 +28,4 @@ function observerWard() {
 	});
 }
 
-document.addEventListener('DOMContentLoaded', ()=> { observerWard(); });
+observerWard();
